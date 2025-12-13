@@ -1,0 +1,244 @@
+<?php $currentPage = 'Home'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auxilia | Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <?php include __DIR__ . '/partials/navbar.php'; ?>
+
+    <main class="hero" id="hero">
+        <div class="container py-1">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 col-xl-7 animate-on-load" style="--delay:0.1s">
+                    <div class="hero-card mx-3">
+                        <p class="hero-tagline">Hi there! I'm Terrysha Cindy Auxilia</p>
+                        <h1>
+                            A design learner deepening understanding of <span>user experience</span>
+                        </h1>
+                        <p>
+                            You’re now stepping into my portfolio, showcasing what I learn, what I build, and the progress behind every project.
+                        </p>
+                        <div class="hero-buttons d-flex flex-wrap gap-3 mt-4 justify-content-center">
+                            <a class="btn btn-accent" href="#projects">See More About Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="about py-5" id="about">
+        <div class="container py-lg-5">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 animate-on-load" style="--delay:0.1s">
+                    <p class="eyebrow text-uppercase mb-3">About Me</p>
+                    <h2 class="display-6 fw-semibold mb-3">Let me introduce myself</h2>
+                    <p class="mb-4">
+                        Hello. I'm Terrysha Cindy Auxilia, a software engineering student from SMKN 4 Malang who loves creating web 
+                        experiences that are clean, intuitive, and visually thoughtful. I’m deeply interested in web development and 
+                        UI/UX design, and I enjoy combining logic with creativity to build interfaces that feel smooth and meaningful. 
+                    </p>
+                    <p class="mb-4">
+                        I’ve explored various technologies through school projects and personal learning, including Laravel, Next.js, 
+                        and several other modern tools for both front-end and back-end development. Building things helps me understand 
+                        how ideas turn into real, interactive products. And that process is what I enjoy the most.
+                    </p>
+                    <div class="hero-buttons d-flex flex-wrap gap-3">
+                        <a class="btn btn-accent" href="#projects">Explore My Projects</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-load" style="--delay:0.2s">
+                    <div class="about-figure ms-lg-4">
+                        <img src="assets/image/about.svg" alt="Terrysha portrait" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills py-5" id="skills">
+        <div class="container py-lg-5">
+            <div class="row gy-5 align-items-start">
+                <div class="col-lg-5 animate-on-load" style="--delay:0.15s">
+                    <p class="eyebrow text-uppercase mb-3">Skills</p>
+                    <h2 class="display-6 fw-semibold mb-3">"What I do" Area</h2>
+                    <p>
+                        A mix of visual design sensibility, UX thinking, and front-end engineering helps me
+                        craft experiences that balance usability with aesthetics. Here’s how I map the skills I’m actively sharpening.
+                    </p>
+                </div>
+                <div class="col-lg-7 animate-on-load" style="--delay:0.25s">
+                    <div class="skills-stack">
+                        <div class="skill-item animate-on-load" style="--delay:0.25s">
+                            <div class="skill-head">
+                                <span>UI/UX</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-skill-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item animate-on-load" style="--delay:0.3s">
+                            <div class="skill-head">
+                                <span>Front-End Development</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-skill-level="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <span>Web Design</span>
+                                <span>84%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-skill-level="84"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <span>Mobile Design</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-skill-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <span>Video Editing</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-skill-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects py-5" id="projects">
+        <div class="container py-lg-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-5 animate-on-load" style="--delay:0.1s">
+                <div>
+                    <p class="eyebrow text-uppercase mb-2">Projects</p>
+                    <h2 class="display-6 fw-semibold mb-3 mb-md-0">What I’ve Been Working On</h2>
+                </div>
+                <div class="hero-buttons">
+                    <a class="btn btn-accent" href="#conta">get in touch</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <article class="project-card animate-on-load" style="--delay:0.3s">
+                        <figure class="project-media">
+                            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80"
+                                alt="Illustrated education platform preview">
+                        </figure>
+                        <div class="project-body">
+                            <p class="project-kicker text-uppercase">Education · UI Exploration</p>
+                            <h3>Breaking the Cycle of Poverty through Education</h3>
+                            <a class="project-link" href="#">See Project</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card animate-on-load" style="--delay:0.25s">
+                        <figure class="project-media">
+                            <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=800&q=80"
+                                alt="Minimal agency landing page mock">
+                        </figure>
+                        <div class="project-body">
+                            <p class="project-kicker text-uppercase">Creative Studio · Web Design</p>
+                            <h3>Human Content Guided by a Socially Conscious Hand</h3>
+                            <a class="project-link" href="#">See Project</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card animate-on-load" style="--delay:0.35s">
+                        <figure class="project-media">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"
+                                alt="Laptop showcasing prototype handoff">
+                        </figure>
+                        <div class="project-body">
+                            <p class="project-kicker text-uppercase">Product · Prototype Handoff</p>
+                            <h3>Research-Driven UX for Health Companion Apps</h3>
+                            <a class="project-link" href="#">See Project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-5" id="contact">
+        <div class="container py-lg-5 text-center">
+            <p class="eyebrow text-uppercase mb-2 animate-on-load" style="--delay:0.1s">Contact</p>
+            <h2 class="display-6 fw-semibold mb-3 text-white animate-on-load" style="--delay:0.15s">Let’s connect and build together</h2>
+            <p class="contact-lede mx-auto mb-5 animate-on-load" style="--delay:0.2s">
+                Whether it’s feedback, a collaboration idea, or just to say hello, these are the places where I hang out the most.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="contact-card animate-on-load" style="--delay:0.2s">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope-open"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>terryshacindyauxilia630@gmail.com</p>
+                        <a href="mailto:terryshacindyauxilia630@gmail.com" class="contact-link">Send an email</a>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="contact-card animate-on-load" style="--delay:0.25s">
+                        <div class="contact-icon">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>aux.iliaz</p>
+                        <a href="https://www.instagram.com/aux.iliaz/" target="_blank" rel="noopener" class="contact-link">View profile</a>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="contact-card animate-on-load" style="--delay:0.3s">
+                        <div class="contact-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Terrysha Cindy Auxilia</p>
+                        <a href="https://www.linkedin.com/in/terrysha-cindy-auxilia-57b29233b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="contact-link">Connect</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
