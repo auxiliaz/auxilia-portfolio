@@ -1,4 +1,3 @@
-<?php $currentPage = 'Home'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +21,7 @@
 </head>
 
 <body>
-    <?php include __DIR__ . '/partials/navbar.php'; ?>
+    <div id="navbar-root"></div>
 
     <main class="hero" id="hero">
         <div class="container py-1">
@@ -37,7 +36,7 @@
                             You’re now stepping into my portfolio, showcasing what I learn, what I build, and the progress behind every project.
                         </p>
                         <div class="hero-buttons d-flex flex-wrap gap-3 mt-4 justify-content-center">
-                            <a class="btn btn-accent" href="#projects">See More About Me</a>
+                            <a class="btn btn-accent" href="#about">See More About Me</a>
                         </div>
                     </div>
                 </div>
@@ -52,13 +51,13 @@
                     <p class="eyebrow text-uppercase mb-3">About Me</p>
                     <h2 class="display-6 fw-semibold mb-3">Let me introduce myself</h2>
                     <p class="mb-4">
-                        Hello. I'm Terrysha Cindy Auxilia, a software engineering student from SMKN 4 Malang who loves creating web 
-                        experiences that are clean, intuitive, and visually thoughtful. I’m deeply interested in web development and 
-                        UI/UX design, and I enjoy combining logic with creativity to build interfaces that feel smooth and meaningful. 
+                        Hello. I'm Terrysha Cindy Auxilia, a software engineering student from SMKN 4 Malang who loves creating web
+                        experiences that are clean, intuitive, and visually thoughtful. I’m deeply interested in web development and
+                        UI/UX design, and I enjoy combining logic with creativity to build interfaces that feel smooth and meaningful.
                     </p>
                     <p class="mb-4">
-                        I’ve explored various technologies through school projects and personal learning, including Laravel, Next.js, 
-                        and several other modern tools for both front-end and back-end development. Building things helps me understand 
+                        I’ve explored various technologies through school projects and personal learning, including Laravel, Next.js,
+                        and several other modern tools for both front-end and back-end development. Building things helps me understand
                         how ideas turn into real, interactive products. And that process is what I enjoy the most.
                     </p>
                     <div class="hero-buttons d-flex flex-wrap gap-3">
@@ -105,7 +104,7 @@
                                 <div class="skill-fill" data-skill-level="78"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-load" style="--delay:0.35s">
                             <div class="skill-head">
                                 <span>Web Design</span>
                                 <span>84%</span>
@@ -114,7 +113,7 @@
                                 <div class="skill-fill" data-skill-level="84"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-load" style="--delay:0.4s">
                             <div class="skill-head">
                                 <span>Mobile Design</span>
                                 <span>70%</span>
@@ -123,7 +122,7 @@
                                 <div class="skill-fill" data-skill-level="70"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-load" style="--delay:0.45s">
                             <div class="skill-head">
                                 <span>Video Editing</span>
                                 <span>85%</span>
@@ -146,7 +145,7 @@
                     <h2 class="display-6 fw-semibold mb-3 mb-md-0">What I’ve Been Working On</h2>
                 </div>
                 <div class="hero-buttons">
-                    <a class="btn btn-accent" href="#conta">get in touch</a>
+                    <a class="btn btn-accent" href="#contact">get in touch</a>
                 </div>
             </div>
             <div class="row g-4">
@@ -228,7 +227,8 @@
                         </div>
                         <h3>LinkedIn</h3>
                         <p>Terrysha Cindy Auxilia</p>
-                        <a href="https://www.linkedin.com/in/terrysha-cindy-auxilia-57b29233b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="contact-link">Connect</a>
+                        <a href="https://www.linkedin.com/in/terrysha-cindy-auxilia-57b29233b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" rel="noopener" class="contact-link">Connect</a>
                     </article>
                 </div>
             </div>
@@ -238,6 +238,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="assets/js/navbar.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

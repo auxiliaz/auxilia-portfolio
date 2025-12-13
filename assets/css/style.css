@@ -18,6 +18,18 @@ body {
     scroll-behavior: smooth;
 }
 
+#navbar-root {
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.35rem 0 0.6rem;
+    background: transparent;
+    pointer-events: none;
+}
+
 .animate-on-load {
     opacity: 0;
     transform: translateY(24px);
@@ -49,13 +61,12 @@ a:hover {
 }
 
 .main-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 1.25rem 0;
+    width: 100%;
+    padding: 0.65rem 0 0;
     background: transparent;
     display: flex;
     justify-content: center;
+    pointer-events: auto;
 }
 
 .nav-surface {
@@ -64,7 +75,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 0.45rem 0.9rem;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(14px);
     border-radius: 36px;
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -235,6 +247,7 @@ a:hover {
 
 .about p {
     color: rgba(29, 29, 29, 0.75);
+    text-align: justify;
 }
 
 .skills {
