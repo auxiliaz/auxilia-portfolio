@@ -117,3 +117,5 @@ function initRevealElements() {
 
     revealItems.forEach(item => observer.observe(item));
 }
+
+lucide.createIcons();
